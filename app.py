@@ -1,3 +1,2 @@
-print("Hello from CI/CD")
+print("abdullah")
 
-print(undefined_variable)
