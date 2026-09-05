@@ -1,4 +1,3 @@
-def add(a, b):
-    return a + b
+print("Hello from CI/CD")
 
-print(add(5, 3))
+print(undefined_variable)
