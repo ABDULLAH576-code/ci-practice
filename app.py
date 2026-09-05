@@ -1,3 +1,2 @@
 print("Hello from CI/CD")
-
-print(undefined_variable)
+print("CI pipeline is working successfully!")
