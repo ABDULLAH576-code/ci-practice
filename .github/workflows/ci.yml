@@ -1,0 +1,26 @@
+name: Python CI
+
+# Run CI whenever code is pushed to main
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    # GitHub provides an Ubuntu computer
+    runs-on: ubuntu-latest
+
+    steps:
+      # Download our repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Install Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      # Run our Python program
+      - name: Run Python program
+        run: python app.py
